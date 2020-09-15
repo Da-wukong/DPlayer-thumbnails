@@ -15,7 +15,8 @@ function startSpinner (string, step) {
 }
 
 var startTime = +new Date();
-var tmp = os.tmpdir() + '/dplayer-thumbnails'
+var timestamp = (new Date()).valueOf();
+var tmp = os.tmpdir() + '/dplayer-thumbnails-'+timestamp
 
 program
     .version('0.0.5')
